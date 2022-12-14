@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <%- include('preDefinicao.ejs') %>
+<body>
+    <%- include('navegacao.ejs') %>
+
+    <main>
+        <h1>Casino Cassalli</h1>
+        <section id="about-me">Contato
+            <h4>Preencha com seus dados</h4>
+
+            <form action="/cadastrarusuario" method="POST">
+                
+                <label for="Nome">Nome: </label>
+                <input type="text" id="Nome" name="nome">
+                   
+                <label for="Email">Email: </label>
+                <input type="text" id="Email" name="email">
+
+                <label for="Mensagem">Mensagem: </label>
+                <input type="text" id="Mensagem" name="mensagem">
+            
+                <button type="submit"> Enviar </button>
+            
+            </form>
+
+        </section>
+    </main>
+    
+    <%- include('rodape.ejs') %>    
+    </body>
+</html>
+
+
+  
+  
